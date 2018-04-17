@@ -1,7 +1,28 @@
 # flex_popup
 IE / chrome 중앙정렬 팝업
 
-### 전체소스
+### [CSS] flex css적용
+style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
+기존에 flex라는 CSS를 알게 된 후 적용했을때 chrome에서는 이상없이 잘 동작한다. <br/>
+```
+<style>
+	.popupWrap{display:flex; align-items:center; justify-content:center; width:100%; height: 100%; position:fixed;}
+	.popup{width:150px; height:150px;}
+</style>
+```
+하지만 위의 style만 적용하면 chrome에서는 잘 동작하는데 IE 11에서는 깨진다.(다른 IE버전은 확인해보지 못했다.)<br/><br/>
+
+찾아보니 IE에서도 정상 동작하게 해주는 style이 있었다.<br/>
+**참고한 페이지 : [https://codepen.io/frontendj/pen/Xbvvgg](https://codepen.io/frontendj/pen/Xbvvgg);**
+```
+<style>
+	.popupWrap{display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center;-ms-flex-direction: column; flex-direction: column; width:100%; height: 100%; position:fixed;}
+	.popup{width:150px; height:150px;}
+</style>
+```
+
+# Example
+## fontawesome을 여기에 업로드하지는 않았다. <i></i>태그는 신경쓰지 않아도 된다. 확인하고 싶다면 fontawesome 다운로드 후 적용하면 정확한 화면을 볼 수 있다.
 ```
 <!DOCTYPE html>
 <html>
@@ -68,22 +89,9 @@ IE / chrome 중앙정렬 팝업
 </html>
 ```
 
-### 중요한 부분 - CSS
-style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
-기존에 flex라는 CSS를 알게 된 후 적용했을때 chrome에서는 이상없이 잘 동작한다. <br/>
-```
-<style>
-	.popupWrap{display:flex; align-items:center; justify-content:center; width:100%; height: 100%; position:fixed;}
-	.popup{width:150px; height:150px;}
-</style>
-```
-하지만 위의 style만 적용하면 chrome에서는 잘 동작하는데 IE 11에서는 깨진다.(다른 IE버전은 확인해보지 못했다.)<br/><br/>
+## 미리보기
+### fontawesome 적용 전
+![](./fontawesomeBefore.png)
+### fontawesome 적용 후
+![](./fontawesomeAfter.png)
 
-찾아보니 IE에서도 정상 동작하게 해주는 style이 있었다.<br/>
-**참고한 페이지 : [<U>https://codepen.io/frontendj/pen/Xbvvgg</U>](https://codepen.io/frontendj/pen/Xbvvgg);**
-```
-<style>
-	.popupWrap{display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center;-ms-flex-direction: column; flex-direction: column; width:100%; height: 100%; position:fixed;}
-	.popup{width:150px; height:150px;}
-</style>
-```
