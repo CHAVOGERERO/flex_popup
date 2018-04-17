@@ -22,7 +22,7 @@ style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
 ```
 
 # Example
-## fontawesome을 여기에 업로드하지는 않았다. <i></i>태그는 신경쓰지 않아도 된다. 확인하고 싶다면 fontawesome 다운로드 후 적용하면 정확한 화면을 볼 수 있다.
+fontawesome을 여기에 업로드하지는 않았다. <i></i>태그는 신경쓰지 않아도 된다. 확인하고 싶다면 fontawesome 다운로드 후 적용하면 정확한 화면을 볼 수 있다.
 ```
 <!DOCTYPE html>
 <html>
