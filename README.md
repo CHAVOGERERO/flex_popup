@@ -13,7 +13,7 @@ style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
 하지만 위의 style만 적용하면 chrome에서는 잘 동작하는데 IE 11에서는 깨진다.(다른 IE버전은 확인해보지 못했다.)<br/><br/>
 
 찾아보니 IE에서도 정상 동작하게 해주는 style이 있었다.<br/>
-**참고한 페이지 : [https://codepen.io/frontendj/pen/Xbvvgg](https://codepen.io/frontendj/pen/Xbvvgg);**
+**참고한 페이지 : [https://codepen.io/frontendj/pen/Xbvvgg](https://codepen.io/frontendj/pen/Xbvvgg)**
 ```
 <style>
 	.popupWrap{display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center;-ms-flex-direction: column; flex-direction: column; width:100%; height: 100%; position:fixed;}
@@ -22,7 +22,9 @@ style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
 ```
 
 # Example
-fontawesome을 여기에 업로드하지는 않았다. <i></i>태그는 신경쓰지 않아도 된다. 확인하고 싶다면 fontawesome 다운로드 후 적용하면 정확한 화면을 볼 수 있다.
+fontawesome을 여기에 업로드하지는 않았다. <i></i>태그는 신경쓰지 않아도 된다.<br/>
+확인하고 싶다면 fontawesome 다운로드 후 적용하면 정확한 화면을 볼 수 있다.
+**fontawesome download : [https://fontawesome.com/](https://fontawesome.com/)**
 ```
 <!DOCTYPE html>
 <html>
