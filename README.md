@@ -77,10 +77,10 @@ style .popupWrap에 적용되어있는 부분이 중요하다.<br/>
 	.popup{width:150px; height:150px;}
 </style>
 ```
-하지만 위의 style만 적용하면 chrome에서는 잘 동작하는데 IE 11에서는 깨진다.(다른 IE버전은 확인해보지 못했다.)
+하지만 위의 style만 적용하면 chrome에서는 잘 동작하는데 IE 11에서는 깨진다.(다른 IE버전은 확인해보지 못했다.)<br/><br/>
 
-찾아보니 IE에서도 정상 동작하게 해주는 style이 있었다.
-참고한 페이지 : [https://codepen.io/frontendj/pen/Xbvvgg](https://codepen.io/frontendj/pen/Xbvvgg);
+찾아보니 IE에서도 정상 동작하게 해주는 style이 있었다.<br/>
+**참고한 페이지 : [<U>https://codepen.io/frontendj/pen/Xbvvgg</U>](https://codepen.io/frontendj/pen/Xbvvgg);**
 ```
 <style>
 	.popupWrap{display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center;-ms-flex-direction: column; flex-direction: column; width:100%; height: 100%; position:fixed;}
